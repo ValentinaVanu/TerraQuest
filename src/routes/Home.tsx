@@ -1,7 +1,9 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
+
   return (
     <Container>
       <Row>
@@ -14,7 +16,7 @@ const Home: React.FC = () => {
 
           <hr />
 
-          <Button>View Companies</Button>
+          <Link to="/companies" className="btn btn-primary">View Companies</Link>
         </Col>
       </Row>
     </Container>
